@@ -6,7 +6,7 @@ import javax.swing.JFrame;
 
 public class JavaMensaje {
 
-	private JFrame frame;
+	private JFrame frmEmpleoremoto;
 
 	/**
 	 * Launch the application.
@@ -16,7 +16,7 @@ public class JavaMensaje {
 			public void run() {
 				try {
 					JavaMensaje window = new JavaMensaje();
-					window.frame.setVisible(true);
+					window.frmEmpleoremoto.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -35,9 +35,10 @@ public class JavaMensaje {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
-		frame = new JFrame();
-		frame.setBounds(100, 100, 450, 300);
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frmEmpleoremoto = new JFrame();
+		frmEmpleoremoto.setTitle("EmpleoRemoto");
+		frmEmpleoremoto.setBounds(100, 100, 450, 300);
+		frmEmpleoremoto.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 
 }
